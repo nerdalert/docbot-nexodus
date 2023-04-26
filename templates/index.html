@@ -28,6 +28,11 @@
         </div>
         <button type="submit" class="btn btn-primary">Send</button>
     </form>
+    <div id="spinner" class="text-center mt-3" style="display: none;">
+        <div class="spinner-border text-secondary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
     <div class="card mt-5">
         <div class="card-header">
             Nexodus Bot Responses
@@ -59,11 +64,18 @@
         e.preventDefault();
         const prompt = document.getElementById('prompt').value;
         const chatBox = document.getElementById('chat-box');
+        const spinner = document.getElementById('spinner');
 
         const userMessage = document.createElement('div');
         userMessage.className = 'list-group-item list-group-item-primary';
         userMessage.innerText = prompt;
-        chatBox.appendChild(userMessage);
+         chatBox.appendChild(userMessage);
+
+        // Clear the input text box
+        document.getElementById('prompt').value = '';
+
+        // Show the spinner
+        spinner.style.display = 'block';
 
         const response = await fetch('/query', {
             method: 'POST',
@@ -73,9 +85,12 @@
             body: JSON.stringify({ prompt }),
         }).then(res => res.json());
 
+        // Hide the spinner
+        spinner.style.display = 'none';
+
         const botMessage = document.createElement('div');
         botMessage.className = 'list-group-item list-group-item-info d-flex align-items-center';
-        botMessage.innerHTML = '        <i class="fas fa-robot fa-lg mr-3"></i>' + response['response'];
+        botMessage.innerHTML = '<i class="fas fa-robot fa-lg mr-3"></i>' + response['response'];
         chatBox.appendChild(botMessage);
     });
 </script>

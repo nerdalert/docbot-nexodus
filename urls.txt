@@ -1,7 +1,3 @@
-https://raw.githubusercontent.com/nexodus-io/nexodus/main/CODE_OF_CONDUCT.md
-https://raw.githubusercontent.com/nexodus-io/nexodus/main/CONTRIBUTING.md
-https://raw.githubusercontent.com/nexodus-io/nexodus/main/MAINTAINERS.md
-https://raw.githubusercontent.com/nexodus-io/nexodus/main/README.md
 https://raw.githubusercontent.com/nexodus-io/nexodus/main/docs/README.md
 https://raw.githubusercontent.com/nexodus-io/nexodus/main/docs/deployment/deployment.md
 https://raw.githubusercontent.com/nexodus-io/nexodus/main/docs/deployment/nexodus-service.md
@@ -36,7 +32,3 @@ https://raw.githubusercontent.com/nexodus-io/nexodus/main/docs/user-guide/nexd-p
 https://raw.githubusercontent.com/nexodus-io/nexodus/main/docs/user-guide/scenarios/containers-on-nodes.md
 https://raw.githubusercontent.com/nexodus-io/nexodus/main/docs/user-guide/scenarios/kubernetes-edge.md
 https://raw.githubusercontent.com/nexodus-io/nexodus/main/docs/user-guide/subnet-routers.md
-https://raw.githubusercontent.com/nexodus-io/nexodus/main/ops/ansible/README.md
-https://raw.githubusercontent.com/nexodus-io/nexodus/main/pkg/cookie/README.md
-https://raw.githubusercontent.com/nexodus-io/nexodus/main/pkg/ginsession/README.md
-https://raw.githubusercontent.com/nexodus-io/nexodus/main/pkg/oidcagent/README.md
