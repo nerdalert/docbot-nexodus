@@ -1,5 +1,7 @@
 # Docbot App for Nexodus LLM/NLP Docs POC
 
+https://user-images.githubusercontent.com/1711674/234722846-914445e6-12d9-464c-a556-63e4906575f5.mov
+
 ### Docbot Pre-Requisites
 
 - [Python](https://www.python.org/downloads/)
